@@ -1,0 +1,39 @@
+.products-item-veg {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px; /* Increase padding for better spacing */
+  display: flex;
+  width: 100%;       /* Ensure it takes full width available */
+  min-width: 300px;  /* Adjust minimum width */
+   justify-content: space-between; /* Space out content */
+  min-height: 800px; /* Adjust the minimum height to ensure everything fits */
+}
+
+.products-item-veg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item-veg-image {
+  width: 100%;
+  height: 200px; /* You can adjust this to change the size of the image */
+  object-fit: cover;
+  margin-bottom: 10px; /* Add space below the image */
+}
+
+.products-item-veg p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4; /* Improve readability */
+}
+
+.products-container-veg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
